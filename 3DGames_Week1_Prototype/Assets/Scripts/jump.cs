@@ -6,7 +6,7 @@ public class jump : MonoBehaviour
 
     void OnCollisionEnter (Collision col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.name == "Player")
         {
             Debug.Log("Collision!");
             col.gameObject.GetComponent<Rigidbody>().AddForce(0, thrust, 0);
